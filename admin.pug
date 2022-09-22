@@ -1,11 +1,11 @@
-mixin listitems
+mixin listitems(data)
   tr
-    td RigóJancsi
-    td 320
-    td false
-    td true
-    td 192
-    td 1299
+    td= data.name
+    td= data.price
+    td= data.aFree
+    td= data.sFree
+    td= data.avabAmount
+    td= data.sold
     th edit
 
 doctype html
@@ -23,9 +23,6 @@ html(lang="en")
         th Sfree
         th AvabAmount
         th Sold
-        th 
-      +listitems
-      +listitems
-      +listitems
-      each i in [1,2,3,4,5]
-        +listitems
+        th
+      each product in items
+        +listitems(product)

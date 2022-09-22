@@ -1,0 +1,18 @@
+#V2
+db info
+info
+info for db
+list
+info for db
+list
+CREATE TABLE items;
+DEFINE TABLE items schemaful
+DEFINE TABLE items schemafulL
+INFO FOR db
+DEFINE TABLE items schemafull
+INFO FOR db
+GET * FROM items
+CREATE items:0 set name="club mate" price=780 aFree=true sFree=false avabAmount=9012 sold=32001
+CREATE items:0 set name="club mate", price=780
+select * from items
+select * from db

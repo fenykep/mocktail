@@ -11,16 +11,16 @@ body{
   background-color: var(--bck);
 }
 
-header ul{
+nav ul{
   display: flex;
 }
 
-header li{
+nav li{
   display: initial;
   margin-right: 15px;
 }
 
-header li a{
+nav li a{
   text-decoration: none;
   color: black;
 }
@@ -28,27 +28,88 @@ header li a{
 .shelf{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   grid-row-gap: 20px;
 }
 .prodCard{
   width: 220px;
-  height: 350px;
-  border: solid;
-  border-color: var(--pri);
+  /*height: 370px;*/
+  border: solid var(--pri) 3px;
   border-radius: 20px;
   padding: 15px;
+
+  font-family: 'Fredoka One', cursive;
 }
 .prodCard img{
   width: 100%;
+}
+.prodCard h2{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 1.5rem;
+  font-size: 1.5em;
+  /*overflow: hidden;*/
+  /*font-family: 'Alfa Slab One', cursive;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Courgette', cursive;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Modak', cursive;
+  font-family: 'Paytone One', sans-serif;
+  font-family: 'Staatliches', cursive;*/
+}
+.prodCard h2.long{
+  font-size: 1.15em;
 }
 .infBar{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 .intolBol{
   display: flex;
   flex-direction: row;
+  border: solid black 2px;
+  width: 40px;
+  height: 20px;
+  justify-content: space-around;
+}
+.intolBol div{
+  width: 50%;
+  text-align: center;
+  color: #bd1010;
+}
+.intolBol div:nth-child(1){
+  border-right: solid black 2px;
+}
+.intolBol .asFree{
+  color: #0003;
+  color: #0093065c;
+}
+.buyBar{
+  width: 100%;
+  height: 40px;
+  border: solid 2px;
+}
+.buyBar button{
+  width: 20%;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: 900;
+  border: none;
+  background-color: transparent;
+  transition: all 0.15s;
+
+  font-family: 'Fredoka One', cursive;
+}
+.buyBar button:hover{
+  color: var(--pri);
+}
+.buyBar button:nth-child(2){
+  width: 60%;
+  border-left: solid 2px;
+  border-right: solid 2px;
 }
 
 /*adminTable stuff*/
@@ -57,4 +118,10 @@ table{
 }
 tr:nth-child(even){
   background-color: #0003;
+}
+td{
+  text-align: center;
+}
+td:nth-child(1){
+  text-align: left;
 }

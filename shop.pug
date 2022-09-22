@@ -1,3 +1,5 @@
+include components/prodCard.pug
+
 doctype html
 html(lang="en")
   head
@@ -9,3 +11,7 @@ html(lang="en")
   body
     include components/menubar.pug
     h1 Welcome to my shop
+    main.shelf
+      each product in items
+        + prodCard(product)
+    script(src='components/scripts/setOrderAmount.js')
