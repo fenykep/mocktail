@@ -1,0 +1,23 @@
+{
+  "name": "mocktail",
+  "version": "1.0.0",
+  "description": "A mock cocktail webshop that I intend to use to try out new webstacks. I begin with mostly vanilla html,js,css and a simple mysql DB. Later start using the Pug templating engine and surrealDB.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fenykep/mocktail.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fenykep/mocktail/issues"
+  },
+  "homepage": "https://github.com/fenykep/mocktail#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

@@ -1,0 +1,28 @@
+mixin listitems(data)
+  tr
+    td= data.name
+    td= data.price
+    td= data.aFree
+    td= data.sFree
+    td= data.avabAmount
+    td= data.sold
+    th edit
+
+doctype html
+html(lang="en")
+  head
+    title KokShop
+    link(rel='stylesheet', href='main.css')
+  body
+    include components/menubar.pug
+    table
+      tr
+        th ItemName
+        th Price
+        th Afree
+        th Sfree
+        th AvabAmount
+        th Sold
+        th
+      each product in items
+        +listitems(product)

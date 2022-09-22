@@ -1,0 +1,13 @@
+mixin prodCard(data)
+  .prodCard
+    img(src="img/mocktail.png")
+    h2= data.name
+    .infBar
+      .intolBol
+        div(class=data.aFree?'asFree':'') A
+        div(class=data.sFree?'asFree':'') S
+      .price= data.price + ' Ft'
+    .buyBar
+      button(onclick="setOrderAmount(this, '-')") −
+      button BUY 1
+      button(onclick="setOrderAmount(this, '+')") +
