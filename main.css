@@ -1,0 +1,60 @@
+:root{
+  --pri: #01B;
+  --sec: #ffaa88;
+  --bck: #FCF6D9;
+}
+
+html{
+  font-family: sans-serif;
+}
+body{
+  background-color: var(--bck);
+}
+
+header ul{
+  display: flex;
+}
+
+header li{
+  display: initial;
+  margin-right: 15px;
+}
+
+header li a{
+  text-decoration: none;
+  color: black;
+}
+
+.shelf{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+}
+.prodCard{
+  width: 220px;
+  height: 350px;
+  border: solid;
+  border-color: var(--pri);
+  border-radius: 20px;
+  padding: 15px;
+}
+.prodCard img{
+  width: 100%;
+}
+.infBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.intolBol{
+  display: flex;
+  flex-direction: row;
+}
+
+/*adminTable stuff*/
+table{
+  width: 100%;
+}
+tr:nth-child(even){
+  background-color: #0003;
+}

@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+  head
+    title KokShop
+    link(rel='stylesheet', href='main.css')
+  body
+    include components/menubar.pug
+    h1 Welcome to my shop
+    main.shelf
+      - for(var x=6; x>0;x--)
+        include components/prodCard.pug
+    script(src='components/scripts/setOrderAmount.js')

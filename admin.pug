@@ -1,0 +1,31 @@
+mixin listitems
+  tr
+    td RigóJancsi
+    td 320
+    td false
+    td true
+    td 192
+    td 1299
+    th edit
+
+doctype html
+html(lang="en")
+  head
+    title KokShop
+    link(rel='stylesheet', href='main.css')
+  body
+    include components/menubar.pug
+    table
+      tr
+        th ItemName
+        th Price
+        th Afree
+        th Sfree
+        th AvabAmount
+        th Sold
+        th 
+      +listitems
+      +listitems
+      +listitems
+      each i in [1,2,3,4,5]
+        +listitems
