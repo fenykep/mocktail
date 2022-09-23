@@ -1,0 +1,9 @@
+extends template
+include components/prodCard.pug
+
+block content
+  h1 Welcome to my shop
+  main.shelf
+    each product in items
+      + prodCard(product)
+  script(src='scripts/setOrderAmount.js')

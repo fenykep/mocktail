@@ -101,7 +101,7 @@ nav li a{
   background-color: transparent;
   transition: all 0.15s;
 
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Fredoka One', sans-serif;
 }
 .buyBar button:hover{
   color: var(--pri);
@@ -124,4 +124,35 @@ td{
 }
 td:nth-child(1){
   text-align: left;
+}
+
+
+/*cart stuff*/
+.cart table td:nth-child(4){
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.orderBtn{
+  display: none;
+  
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: 'Fredoka One', sans-serif;
+  text-transform: uppercase;
+  padding: 5px 17px;
+
+  border: solid 2px black;
+  background-color: transparent;
+  
+  transition: all 0.15s;
+}
+
+.orderBtn:hover{
+  color: var(--pri);
 }

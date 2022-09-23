@@ -1,0 +1,14 @@
+mixin prodCard(data)
+  .prodCard(avabAmount=data.avabAmount)
+    img(src="img/"+data.img)
+    h2= data.name
+    .infBar
+      .intolBol
+        div(class=data.aFree?'asFree':'') A
+        div(class=data.sFree?'asFree':'') S
+      .price= data.price + ' Ft'
+    .buyBar
+      button(onclick="setOrderAmount(this, '-')") −
+      //- button(onclick="openBuyModal(this,"+data.avabAmount+")" data-avabAmount=data.avabAmount) BUY 1
+      button(onclick="openBuyModal(this)" data-avabAmount=data.avabAmount data-thing=data.name) BUY 1
+      button(onclick="setOrderAmount(this, '+')") +

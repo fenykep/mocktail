@@ -1,0 +1,13 @@
+extends template
+
+block content
+  h1 Your cart is empty
+  main.cart
+    table
+      tr
+        th Name
+        th Amount
+        th Total Price
+        th
+  button.orderBtn order
+  script(onload="populateCart()" src='scripts/cartOps.js')
