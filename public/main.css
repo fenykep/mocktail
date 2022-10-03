@@ -38,7 +38,7 @@ nav li a{
   border-radius: 20px;
   padding: 15px;
 
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Fredoka One', sans-serif;
 }
 .prodCard img{
   width: 100%;
@@ -49,13 +49,13 @@ nav li a{
   height: 1.5rem;
   font-size: 1.5em;
   /*overflow: hidden;*/
-  /*font-family: 'Alfa Slab One', cursive;
+  /*font-family: 'Alfa Slab One', sans-serif;
   font-family: 'Anton', sans-serif;
-  font-family: 'Courgette', cursive;
-  font-family: 'Fredoka One', cursive;
-  font-family: 'Modak', cursive;
+  font-family: 'Courgette', sans-serif;
+  font-family: 'Fredoka One', sans-serif;
+  font-family: 'Modak', sans-serif;
   font-family: 'Paytone One', sans-serif;
-  font-family: 'Staatliches', cursive;*/
+  font-family: 'Staatliches', sans-serif;*/
 }
 .prodCard h2.long{
   font-size: 1.15em;
@@ -136,7 +136,7 @@ td:nth-child(1){
 
 .orderBtn{
   display: none;
-  
+
   float: right;
   margin-top: 20px;
   margin-right: 20px;

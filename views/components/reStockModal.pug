@@ -1,0 +1,12 @@
+//- prolly youll have to refactor this and corresponging js with modal.pug and
+//- buy.js bc repetitive and chaotic
+
+link(rel='stylesheet', href='modal.css')
+.modalbg
+	.modal(data-name="" data-amount="")
+		h3 New stuff arrived!
+		.itemRow
+			p.itemName
+			input(type="text" placeholder="amount")
+		button(onclick="stockDone()") Aha
+		script(src='scripts/stockOps.js')

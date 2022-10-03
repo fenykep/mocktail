@@ -29,7 +29,6 @@ app.get('/', (req, res) => {
 app.get('/shop', (req, res) => {
   result = con.query("SELECT name, price, aFree, sFree, avabAmount, img FROM items WHERE avabAmount>0", function (err, result, fields) {
     if (err) throw err;
-    console.log(result);
     res.render('shop', {
       items: result,
     });
@@ -38,10 +37,17 @@ app.get('/shop', (req, res) => {
 app.get('/cart', (req, res) => {
   res.render('cart', {});
 });
+app.post('/thanks', (req, res) => {
+  console.log('bobb');
+  //res.render('thanks', {});
+  res.send('Hello, wettem');
+  console.log('szia');
+  console.log(req);
+  console.log('eddig');
+});
 app.get('/admin', (req, res) => {
   result = con.query("SELECT * FROM items", function (err, result, fields) {
     if (err) throw err;
-    console.log(result);
     res.render('admin', {
       items: result,
     });
@@ -51,3 +57,9 @@ app.get('/admin', (req, res) => {
 const server = app.listen(process.env.PORT || 3000, () => {
   console.log(`Server started on port: ${server.address().port}`);
 });
+
+//redir to thankyou sold page with get/post body containing cartArr
+function soldItem(item){
+  con.query('UPDATE mocktail.items SET sold = 5 WHERE name = "Montepulciano"');
+  con.query('UPDATE mocktail.items SET sold = 5 WHERE name = "'+item.name+'"');
+}
